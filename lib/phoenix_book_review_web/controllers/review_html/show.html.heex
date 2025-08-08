@@ -1,0 +1,18 @@
+<.header>
+  Review <%= @review.id %>
+  <:subtitle>This is a review record from your database.</:subtitle>
+  <:actions>
+    <.link href={~p"/reviews/#{@review}/edit"}>
+      <.button>Edit review</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Book"><%= @review.book.name %></:item>
+  <:item title="Review text"><%= @review.review_text %></:item>
+  <:item title="Score"><%= @review.score %></:item>
+  <:item title="Upvotes"><%= @review.upvotes %></:item>
+</.list>
+
+<a href="/reviews">Back to reviews</a>

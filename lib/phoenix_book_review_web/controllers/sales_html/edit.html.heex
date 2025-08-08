@@ -1,0 +1,8 @@
+<.header>
+  Edit Sales <%= @sales.id %>
+  <:subtitle>Use this form to manage sales records in your database.</:subtitle>
+</.header>
+
+<.sales_form changeset={@changeset} action={~p"/sales/#{@sales}"} books={@books} />
+
+<a href="/sales">Back to sales</a>

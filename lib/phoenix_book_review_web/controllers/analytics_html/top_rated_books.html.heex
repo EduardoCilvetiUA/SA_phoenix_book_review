@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Top 10 Rated Books</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Book</th>
+      <th>Author</th>
+      <th>Average Score</th>
+      <th>Reviews</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= for {book_data, index} <- Enum.with_index(@top_books, 1) do %>
+      <tr>
+        <td><%= index %></td>
+        <td><%= book_data.book.name %></td>
+        <td><%= book_data.author_name %></td>
+        <td><%= Decimal.round(book_data.avg_score, 2) %></td>
+        <td><%= book_data.review_count %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+  <a href="/analytics">Back to Analytics</a>
+</div>

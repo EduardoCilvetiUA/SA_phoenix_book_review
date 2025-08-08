@@ -1,0 +1,17 @@
+<.header>
+  Sales <%= @sales.id %>
+  <:subtitle>This is a sales record from your database.</:subtitle>
+  <:actions>
+    <.link href={~p"/sales/#{@sales}/edit"}>
+      <.button>Edit sales</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Book"><%= @sales.book.name %></:item>
+  <:item title="Year"><%= @sales.year %></:item>
+  <:item title="Sales amount"><%= @sales.sales_amount %></:item>
+</.list>
+
+<a href="/sales">Back to sales</a>

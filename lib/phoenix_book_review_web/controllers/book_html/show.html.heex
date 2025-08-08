@@ -1,0 +1,19 @@
+<.header>
+  Book <%= @book.id %>
+  <:subtitle>This is a book record from your database.</:subtitle>
+  <:actions>
+    <.link href={~p"/books/#{@book}/edit"}>
+      <.button>Edit book</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Name"><%= @book.name %></:item>
+  <:item title="Author"><%= @book.author.name %></:item>
+  <:item title="Summary"><%= @book.summary %></:item>
+  <:item title="Date of publication"><%= @book.date_of_publication %></:item>
+  <:item title="Number of sales"><%= @book.number_of_sales %></:item>
+</.list>
+
+<a href="/books">Back to books</a>

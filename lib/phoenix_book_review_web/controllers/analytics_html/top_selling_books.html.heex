@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Top 50 Selling Books</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Book</th>
+      <th>Author</th>
+      <th>Total Sales</th>
+      <th>Author Sales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= for {book_data, index} <- Enum.with_index(@top_books, 1) do %>
+      <tr>
+        <td><%= index %></td>
+        <td><%= book_data.book.name %></td>
+        <td><%= book_data.author_name %></td>
+        <td><%= book_data.total_sales %></td>
+        <td><%= book_data.author_total_sales %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+  <a href="/analytics">Back to Analytics</a>
+</div>

@@ -1,0 +1,35 @@
+<div class="container">
+  <h1>Authors Statistics</h1>
+
+  <div class="nav-links">
+    <a href="/analytics/authors_stats?sort_by=name&order=asc">Sort by Name ↑</a>
+    <a href="/analytics/authors_stats?sort_by=name&order=desc">Sort by Name ↓</a>
+    <a href="/analytics/authors_stats?sort_by=date_of_birth&order=asc">Sort by Age ↑</a>
+    <a href="/analytics/authors_stats?sort_by=date_of_birth&order=desc">Sort by Age ↓</a>
+  </div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Country</th>
+      <th>Book Count</th>
+      <th>Avg Score</th>
+      <th>Total Sales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= for stats <- @authors_stats do %>
+      <tr>
+        <td><%= stats.author.name %></td>
+        <td><%= stats.author.country_of_origin %></td>
+        <td><%= stats.book_count || 0 %></td>
+        <td><%= if stats.avg_score, do: Decimal.round(stats.avg_score, 2), else: "N/A" %></td>
+        <td><%= stats.total_sales || 0 %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+  <a href="/analytics">Back to Analytics</a>
+</div>

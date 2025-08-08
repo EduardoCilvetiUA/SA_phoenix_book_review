@@ -1,0 +1,38 @@
+<div class="container">
+  <h1>Search Results for "<%= @search_term %>"</h1>
+
+<p>Found <%= @results.total %> books (Page <%= @results.page %> of <%= @results.total_pages %>)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Book</th>
+      <th>Author</th>
+      <th>Publication Date</th>
+      <th>Summary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= for book_data <- @results.books do %>
+      <tr>
+        <td><%= book_data.book.name %></td>
+        <td><%= book_data.author_name %></td>
+        <td><%= book_data.book.date_of_publication %></td>
+        <td><%= String.slice(book_data.book.summary, 0, 100) %>...</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div>
+  <%= if @results.page > 1 do %>
+    <a href={"/analytics/search?q=#{URI.encode(@search_term)}&page=#{@results.page - 1}"}>Previous</a>
+  <% end %>
+  
+  <%= if @results.page < @results.total_pages do %>
+    <a href={"/analytics/search?q=#{URI.encode(@search_term)}&page=#{@results.page + 1}"}>Next</a>
+  <% end %>
+</div>
+
+  <a href="/analytics/search">New Search</a> | <a href="/analytics">Back to Analytics</a>
+</div>
