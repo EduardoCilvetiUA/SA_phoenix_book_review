@@ -3,7 +3,7 @@ import Config
 # Configure your database
 config :phoenix_book_review, PhoenixBookReview.Repo,
   username: "postgres",
-  password: "2503",
+  password: System.get_env("DATABASE_PASSWORD"),
   hostname: "localhost",
   database: "phoenix_book_review_dev",
   stacktrace: true,
@@ -19,11 +19,11 @@ config :phoenix_book_review, PhoenixBookReview.Repo,
 config :phoenix_book_review, PhoenixBookReviewWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
-  http: [ip: {127, 0, 0, 1}, port: String.to_integer(System.get_env("PORT") || "4000")],
+  http: [ip: {127, 0, 0, 1}, port: String.to_integer(System.get_env("PHX_PORT") || "4000")],
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "xDqTau4dWLdp65pr3CC1vTDUh+YRZfYSCe43Uk6W6c0XBOC5MF2qpM70fQMGEF7L",
+  secret_key_base: System.get_env("SECRET_KEY_BASE") || "xDqTau4dWLdp65pr3CC1vTDUh+YRZfYSCe43Uk6W6c0XBOC5MF2qpM70fQMGEF7L",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:phoenix_book_review, ~w(--sourcemap=inline --watch)]},
     tailwind: {Tailwind, :install_and_run, [:phoenix_book_review, ~w(--watch)]}

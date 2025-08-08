@@ -4,6 +4,23 @@
 # This configuration file is loaded before any dependency and
 # is restricted to this project.
 
+# Load environment variables from .env file in development
+if Mix.env() in [:dev, :test] do
+  env_file = Path.expand(".env", __DIR__ |> Path.dirname())
+  if File.exists?(env_file) do
+    env_file
+    |> File.read!()
+    |> String.split("\n", trim: true)
+    |> Enum.reject(&String.starts_with?(&1, "#"))
+    |> Enum.each(fn line ->
+      case String.split(line, "=", parts: 2) do
+        [key, value] -> System.put_env(String.trim(key), String.trim(value))
+        _ -> :ok
+      end
+    end)
+  end
+end
+
 # General application configuration
 import Config
 

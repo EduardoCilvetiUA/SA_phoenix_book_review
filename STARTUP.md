@@ -13,17 +13,24 @@
 cd D:\Usuario\Escritorio\Uandes\SoftwareArquitecture\phoenix_book_review\phoenix_book_review
 ```
 
-### 2. Install Dependencies
+### 2. Environment Configuration
+Create a `.env` file in the project root with your database credentials:
+```bash
+cp .env.example .env
+```
+Then edit `.env` and update:
+```
+DATABASE_PASSWORD=your_postgres_password
+SECRET_KEY_BASE=your_secret_key_base
+PHX_PORT=4000
+```
+
+**Note**: The application automatically loads the `.env` file in development mode. No manual environment variable loading is required.
+
+### 3. Install Dependencies
 ```bash
 mix deps.get
 ```
-
-### 3. Configure Database
-Update `config/dev.exs` if needed:
-- Username: postgres
-- Password: 2503 (or your PostgreSQL password)
-- Database: phoenix_book_review_dev
-- Host: localhost
 
 ### 4. Create and Migrate Database
 ```bash
@@ -86,8 +93,9 @@ mix phx.server
 
 ### Database Connection Issues
 - Ensure PostgreSQL is running
-- Check password in config/dev.exs
+- Check DATABASE_PASSWORD in .env file
 - Verify database exists
+- Ensure environment variables are loaded
 
 ### Port Already in Use
 ```bash
@@ -98,10 +106,3 @@ lsof -ti:4000 | xargs kill -9
 ### Permission Issues
 - Ensure proper PostgreSQL user permissions
 - Check file system permissions
-
-## Code Standards Compliance
-✅ All files under 100 lines
-✅ No comments in code
-✅ No emojis
-✅ Clean English naming
-✅ Single responsibility per module
