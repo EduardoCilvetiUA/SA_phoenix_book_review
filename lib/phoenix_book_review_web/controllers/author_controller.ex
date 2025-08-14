@@ -53,10 +53,17 @@ defmodule PhoenixBookReviewWeb.AuthorController do
 
   def delete(conn, %{"id" => id}) do
     author = Catalog.get_author!(id)
-    {:ok, _author} = Catalog.delete_author(author)
-
-    conn
-    |> put_flash(:info, "Author deleted successfully.")
-    |> redirect(to: ~p"/authors")
+    
+    case Catalog.delete_author(author) do
+      {:ok, _result} ->
+        conn
+        |> put_flash(:info, "Author and all related books, reviews, and sales deleted successfully.")
+        |> redirect(to: ~p"/authors")
+      
+      {:error, _reason} ->
+        conn
+        |> put_flash(:error, "Error deleting author.")
+        |> redirect(to: ~p"/authors")
+    end
   end
 end

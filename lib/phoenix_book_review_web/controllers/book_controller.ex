@@ -57,10 +57,17 @@ defmodule PhoenixBookReviewWeb.BookController do
 
   def delete(conn, %{"id" => id}) do
     book = Catalog.get_book!(id)
-    {:ok, _book} = Catalog.delete_book(book)
-
-    conn
-    |> put_flash(:info, "Book deleted successfully.")
-    |> redirect(to: ~p"/books")
+    
+    case Catalog.delete_book(book) do
+      {:ok, _result} ->
+        conn
+        |> put_flash(:info, "Book and all related reviews and sales deleted successfully.")
+        |> redirect(to: ~p"/books")
+      
+      {:error, _reason} ->
+        conn
+        |> put_flash(:error, "Error deleting book.")
+        |> redirect(to: ~p"/books")
+    end
   end
 end

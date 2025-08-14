@@ -86,7 +86,21 @@ defmodule PhoenixBookReview.Catalog do
 
   """
   def delete_author(%Author{} = author) do
-    Repo.delete(author)
+    Repo.transaction(fn ->
+      books = from(b in Book, where: b.author_id == ^author.id) |> Repo.all()
+      
+      for book <- books do
+        delete_book_cascade(book)
+      end
+      
+      Repo.delete!(author)
+    end)
+  end
+
+  defp delete_book_cascade(%Book{} = book) do
+    from(r in Review, where: r.book_id == ^book.id) |> Repo.delete_all()
+    from(s in Sales, where: s.book_id == ^book.id) |> Repo.delete_all()
+    Repo.delete!(book)
   end
 
   @doc """
@@ -121,7 +135,9 @@ defmodule PhoenixBookReview.Catalog do
   end
 
   def delete_book(%Book{} = book) do
-    Repo.delete(book)
+    Repo.transaction(fn ->
+      delete_book_cascade(book)
+    end)
   end
 
   def change_book(%Book{} = book, attrs \\ %{}) do
