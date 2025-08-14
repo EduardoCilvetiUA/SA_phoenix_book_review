@@ -27,12 +27,14 @@ services:
       - DATABASE_HOST=db
       - SECRET_KEY_BASE=${SECRET_KEY_BASE}
       - PHX_PORT=${PHX_PORT}
-      - MIX_ENV=${MIX_ENV}
+      - MIX_ENV=${MIX_ENV:-dev}
     volumes:
       - .:/app
     command: >
       sh -c "
         echo 'Waiting for database...' &&
+        echo 'DATABASE_HOST=' && echo $DATABASE_HOST &&
+        echo 'DATABASE_PASSWORD=' && echo $DATABASE_PASSWORD &&
         sleep 10 &&
         mix ecto.create &&
         mix ecto.migrate &&
