@@ -1,0 +1,50 @@
+# Dependencies
+/deps
+/_build
+/node_modules
+
+# Database
+*.db
+*.sqlite
+
+# Static artifacts
+/priv/static/assets
+
+# Environment variables (but we want .env for Docker)
+# .env
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Coverage directory used by tools like istanbul
+/cover
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile*
+docker-compose*
+
+# Documentation
+*.md
