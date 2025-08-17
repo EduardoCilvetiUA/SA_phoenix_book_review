@@ -4,12 +4,12 @@ A comprehensive book review and analytics platform built with Phoenix Framework.
 
 ## Features
 
-✅ **CRUD Operations**: Authors, Books, Reviews, Sales management  
-✅ **Advanced Analytics**: Author statistics, top-rated books, top-selling books  
-✅ **Search System**: Book search with pagination  
-✅ **Cascade Delete**: Automatic cleanup of related data  
-✅ **Mock Data**: 50 real authors, 300 books, reviews, and 5+ years of sales data  
-✅ **Responsive Design**: Clean, professional interface  
+ **CRUD Operations**: Authors, Books, Reviews, Sales management  
+ - **Advanced Analytics**: Author statistics, top-rated books, top-selling books  
+ - **Search System**: Book search with pagination  
+ - **Cascade Delete**: Automatic cleanup of related data  
+ - **Mock Data**: 50 real authors, 300 books, reviews, and 5+ years of sales data  
+ - **Responsive Design**: Clean, professional interface  
 
 ## Prerequisites
 
