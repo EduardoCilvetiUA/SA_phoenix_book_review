@@ -41,14 +41,6 @@ $env:SECRET_KEY_BASE = "xDqTau4dWLdp65pr3CC1vTDUh+YRZfYSCe43Uk6W6c0XBOC5MF2qpM70
 $env:PHX_PORT = "4000"
 ```
 
-Or use the provided script:
-```powershell
-.\run_local.ps1 mix ecto.create
-.\run_local.ps1 mix ecto.migrate
-.\run_local.ps1 mix run priv/repo/seeds.exs
-.\run_local.ps1 mix phx.server
-```
-
 #### 4. Setup Database
 ```bash
 mix ecto.create
