@@ -2,6 +2,7 @@ defmodule PhoenixBookReview.Catalog.Book do
   use Ecto.Schema
   import Ecto.Changeset
 
+  @derive {Jason.Encoder, only: [:id, :name, :summary, :date_of_publication, :number_of_sales, :author_id, :inserted_at, :updated_at]}
   schema "books" do
     field :name, :string
     field :summary, :string

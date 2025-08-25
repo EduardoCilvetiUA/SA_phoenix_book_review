@@ -1,6 +1,4 @@
 defmodule PhoenixBookReview.Application do
-  # See https://hexdocs.pm/elixir/Application.html
-  # for more information on OTP Applications
   @moduledoc false
 
   use Application
@@ -12,20 +10,22 @@ defmodule PhoenixBookReview.Application do
       PhoenixBookReview.Repo,
       {DNSCluster, query: Application.get_env(:phoenix_book_review, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: PhoenixBookReview.PubSub},
-      # Start a worker by calling: PhoenixBookReview.Worker.start_link(arg)
-      # {PhoenixBookReview.Worker, arg},
-      # Start to serve requests, typically the last entry
       PhoenixBookReviewWeb.Endpoint
-    ]
+    ] ++ redis_children()
 
-    # See https://hexdocs.pm/elixir/Supervisor.html
-    # for other strategies and supported options
     opts = [strategy: :one_for_one, name: PhoenixBookReview.Supervisor]
     Supervisor.start_link(children, opts)
   end
 
-  # Tell Phoenix to update the endpoint configuration
-  # whenever the application is updated.
+  defp redis_children do
+    if System.get_env("REDIS_ENABLED", "false") == "true" do
+      redis_url = System.get_env("REDIS_URL", "redis://localhost:6379/0")
+      [{Redix, {redis_url, [name: :redix]}}]
+    else
+      []
+    end
+  end
+
   @impl true
   def config_change(changed, _new, removed) do
     PhoenixBookReviewWeb.Endpoint.config_change(changed, removed)
