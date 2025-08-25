@@ -1,0 +1,11 @@
+app.localhost {
+    # Serve static assets (CSS, JS) directly from Caddy  
+    handle /assets/* {
+        root * /app/priv/static
+        file_server
+        try_files {path} {path}.gz
+    }
+    
+    # Proxy all requests (including uploads) to Phoenix app
+    reverse_proxy web:4000
+}

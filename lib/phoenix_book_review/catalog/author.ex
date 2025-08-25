@@ -2,12 +2,13 @@ defmodule PhoenixBookReview.Catalog.Author do
   use Ecto.Schema
   import Ecto.Changeset
 
-  @derive {Jason.Encoder, only: [:id, :name, :date_of_birth, :country_of_origin, :description, :inserted_at, :updated_at]}
+  @derive {Jason.Encoder, only: [:id, :name, :date_of_birth, :country_of_origin, :description, :profile_image, :inserted_at, :updated_at]}
   schema "authors" do
     field :name, :string
     field :date_of_birth, :date
     field :country_of_origin, :string
     field :description, :string
+    field :profile_image, :string
     has_many :books, PhoenixBookReview.Catalog.Book
 
     timestamps(type: :utc_datetime)
@@ -16,7 +17,7 @@ defmodule PhoenixBookReview.Catalog.Author do
   @doc false
   def changeset(author, attrs) do
     author
-    |> cast(attrs, [:name, :date_of_birth, :country_of_origin, :description])
+    |> cast(attrs, [:name, :date_of_birth, :country_of_origin, :description, :profile_image])
     |> validate_required([:name, :date_of_birth, :country_of_origin, :description])
   end
 end

@@ -15,4 +15,11 @@
   <:item title="Description"><%= @author.description %></:item>
 </.list>
 
+<%= if @author.profile_image do %>
+  <div>
+    <h3>Profile Image:</h3>
+    <img src={@author.profile_image} alt="Author profile" style="max-width: 200px;" />
+  </div>
+<% end %>
+
 <a href="/authors">Back to authors</a>

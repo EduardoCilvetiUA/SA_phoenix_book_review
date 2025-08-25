@@ -5,7 +5,7 @@ defmodule PhoenixBookReviewWeb.BookHTML do
 
   def book_form(assigns) do
     ~H"""
-    <.form :let={f} for={@changeset} action={@action}>
+    <.form :let={f} for={@changeset} action={@action} multipart={true}>
       <%= if @changeset.action do %>
         <div>Oops, something went wrong!</div>
       <% end %>
@@ -40,6 +40,11 @@ defmodule PhoenixBookReviewWeb.BookHTML do
             <option value={author.id}><%= author.name %></option>
           <% end %>
         </select>
+      </div>
+      
+      <div>
+        <label>Cover Image</label>
+        <input type="file" name="book[cover_image_upload]" accept="image/*" />
       </div>
       
       <div>

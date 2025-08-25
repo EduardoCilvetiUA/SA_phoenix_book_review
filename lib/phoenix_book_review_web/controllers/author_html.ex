@@ -5,7 +5,7 @@ defmodule PhoenixBookReviewWeb.AuthorHTML do
 
   def author_form(assigns) do
     ~H"""
-    <.form :let={f} for={@changeset} action={@action}>
+    <.form :let={f} for={@changeset} action={@action} multipart={true}>
       <%= if @changeset.action do %>
         <div>Oops, something went wrong!</div>
       <% end %>
@@ -31,6 +31,11 @@ defmodule PhoenixBookReviewWeb.AuthorHTML do
       <div>
         <label>Description</label>
         <textarea name={Phoenix.HTML.Form.input_name(f, :description)}><%= Phoenix.HTML.Form.input_value(f, :description) %></textarea>
+      </div>
+      
+      <div>
+        <label>Profile Image</label>
+        <input type="file" name="author[profile_image_upload]" accept="image/*" />
       </div>
       
       <div>

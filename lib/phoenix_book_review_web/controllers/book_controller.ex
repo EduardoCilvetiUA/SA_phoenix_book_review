@@ -3,6 +3,7 @@ defmodule PhoenixBookReviewWeb.BookController do
 
   alias PhoenixBookReview.Catalog
   alias PhoenixBookReview.Catalog.Book
+  alias PhoenixBookReview.Services.FileUpload
 
   def index(conn, _params) do
     books = Catalog.list_books()
@@ -21,6 +22,8 @@ defmodule PhoenixBookReviewWeb.BookController do
   end
 
   def create(conn, %{"book" => book_params}) do
+    book_params = handle_image_upload(book_params, "cover_image_upload")
+    
     case Catalog.create_book(book_params) do
       {:ok, book} ->
         conn
@@ -42,6 +45,7 @@ defmodule PhoenixBookReviewWeb.BookController do
 
   def update(conn, %{"id" => id, "book" => book_params}) do
     book = Catalog.get_book!(id)
+    book_params = handle_image_upload(book_params, "cover_image_upload")
 
     case Catalog.update_book(book, book_params) do
       {:ok, book} ->
@@ -68,6 +72,17 @@ defmodule PhoenixBookReviewWeb.BookController do
         conn
         |> put_flash(:error, "Error deleting book.")
         |> redirect(to: ~p"/books")
+    end
+  end
+
+  defp handle_image_upload(params, upload_key) do
+    case Map.get(params, upload_key) do
+      %Plug.Upload{} = upload ->
+        case FileUpload.handle_upload(upload, "book_cover") do
+          {:ok, path} -> Map.put(params, "cover_image", path)
+          {:error, _} -> params
+        end
+      _ -> params
     end
   end
 end

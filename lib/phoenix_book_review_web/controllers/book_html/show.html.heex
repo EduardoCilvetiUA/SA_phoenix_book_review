@@ -16,4 +16,11 @@
   <:item title="Number of sales"><%= @book.number_of_sales %></:item>
 </.list>
 
+<%= if @book.cover_image do %>
+  <div>
+    <h3>Cover Image:</h3>
+    <img src={@book.cover_image} alt="Book cover" style="max-width: 200px;" />
+  </div>
+<% end %>
+
 <a href="/books">Back to books</a>
