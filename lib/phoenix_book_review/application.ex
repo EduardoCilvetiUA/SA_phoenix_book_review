@@ -14,7 +14,12 @@ defmodule PhoenixBookReview.Application do
     ] ++ redis_children()
 
     opts = [strategy: :one_for_one, name: PhoenixBookReview.Supervisor]
-    Supervisor.start_link(children, opts)
+    
+    result = Supervisor.start_link(children, opts)
+    
+    initialize_elasticsearch()
+    
+    result
   end
 
   defp redis_children do
@@ -23,6 +28,17 @@ defmodule PhoenixBookReview.Application do
       [{Redix, {redis_url, [name: :redix]}}]
     else
       []
+    end
+  end
+
+  defp initialize_elasticsearch do
+    if System.get_env("ELASTICSEARCH_ENABLED", "false") == "true" do
+      Task.start(fn ->
+        :timer.sleep(5000)
+        PhoenixBookReview.Services.SearchIndexer.create_indices()
+        PhoenixBookReview.Services.SearchIndexer.reindex_all_books()
+        PhoenixBookReview.Services.SearchIndexer.reindex_all_reviews()
+      end)
     end
   end
 

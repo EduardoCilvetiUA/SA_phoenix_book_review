@@ -1,7 +1,7 @@
 defmodule PhoenixBookReview.Catalog.ReviewContext do
   alias PhoenixBookReview.Repo
   alias PhoenixBookReview.Catalog.Review
-  alias PhoenixBookReview.Services.CacheInvalidation
+  alias PhoenixBookReview.Services.{CacheInvalidation, SearchService}
 
   def list_reviews do
     Repo.all(Review) |> Repo.preload(:book)
@@ -15,7 +15,9 @@ defmodule PhoenixBookReview.Catalog.ReviewContext do
     |> Repo.insert()
 
     case result do
-      {:ok, _review} -> CacheInvalidation.invalidate_review_caches()
+      {:ok, review} -> 
+        CacheInvalidation.invalidate_review_caches()
+        SearchService.index_review(review)
       _ -> :ok
     end
 
@@ -28,7 +30,9 @@ defmodule PhoenixBookReview.Catalog.ReviewContext do
     |> Repo.update()
 
     case result do
-      {:ok, _review} -> CacheInvalidation.invalidate_review_caches()
+      {:ok, updated_review} -> 
+        CacheInvalidation.invalidate_review_caches()
+        SearchService.index_review(updated_review)
       _ -> :ok
     end
 
@@ -39,7 +43,9 @@ defmodule PhoenixBookReview.Catalog.ReviewContext do
     result = Repo.delete(review)
 
     case result do
-      {:ok, _review} -> CacheInvalidation.invalidate_review_caches()
+      {:ok, _} -> 
+        CacheInvalidation.invalidate_review_caches()
+        SearchService.delete_review(review.id)
       _ -> :ok
     end
 

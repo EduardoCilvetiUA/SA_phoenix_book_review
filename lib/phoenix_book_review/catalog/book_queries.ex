@@ -2,7 +2,7 @@ defmodule PhoenixBookReview.Catalog.BookQueries do
   import Ecto.Query, warn: false
   alias PhoenixBookReview.Repo
   alias PhoenixBookReview.Catalog.{Author, Book}
-  alias PhoenixBookReview.Services.CacheService
+  alias PhoenixBookReview.Services.{CacheService, SearchService}
 
   def top_rated_books(limit \\ 10) do
     cache_key = "top_rated_books_#{limit}"
@@ -35,11 +35,18 @@ defmodule PhoenixBookReview.Catalog.BookQueries do
     
     case CacheService.get(cache_key) do
       nil ->
-        result = fetch_search_results(search_term, page, per_page)
-        CacheService.set(cache_key, result, 600)
+        result = perform_search(search_term, page, per_page)
+        CacheService.set(cache_key, result, 300)  # 5 min cache for search
         result
       cached_result ->
         cached_result
+    end
+  end
+
+  defp perform_search(search_term, page, per_page) do
+    case SearchService.search_books(search_term, page, per_page) do
+      nil -> fetch_search_results(search_term, page, per_page)
+      elasticsearch_result -> elasticsearch_result
     end
   end
 

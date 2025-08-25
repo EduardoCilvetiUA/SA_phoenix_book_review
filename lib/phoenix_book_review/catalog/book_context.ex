@@ -2,7 +2,7 @@ defmodule PhoenixBookReview.Catalog.BookContext do
   import Ecto.Query, warn: false
   alias PhoenixBookReview.Repo
   alias PhoenixBookReview.Catalog.{Book, Review, Sales}
-  alias PhoenixBookReview.Services.CacheInvalidation
+  alias PhoenixBookReview.Services.{CacheInvalidation, SearchService}
 
   def list_books do
     Repo.all(Book) |> Repo.preload(:author)
@@ -16,7 +16,9 @@ defmodule PhoenixBookReview.Catalog.BookContext do
     |> Repo.insert()
 
     case result do
-      {:ok, _book} -> CacheInvalidation.invalidate_book_caches()
+      {:ok, book} -> 
+        CacheInvalidation.invalidate_book_caches()
+        SearchService.index_book(book)
       _ -> :ok
     end
 
@@ -29,7 +31,9 @@ defmodule PhoenixBookReview.Catalog.BookContext do
     |> Repo.update()
 
     case result do
-      {:ok, _book} -> CacheInvalidation.invalidate_book_caches()
+      {:ok, updated_book} -> 
+        CacheInvalidation.invalidate_book_caches()
+        SearchService.index_book(updated_book)
       _ -> :ok
     end
 
@@ -42,7 +46,9 @@ defmodule PhoenixBookReview.Catalog.BookContext do
     end)
 
     case result do
-      {:ok, _} -> CacheInvalidation.invalidate_all_caches()
+      {:ok, _} -> 
+        CacheInvalidation.invalidate_all_caches()
+        SearchService.delete_book(book.id)
       _ -> :ok
     end
 
