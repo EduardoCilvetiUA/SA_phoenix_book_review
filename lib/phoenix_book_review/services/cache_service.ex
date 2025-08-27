@@ -3,28 +3,35 @@ defmodule PhoenixBookReview.Services.CacheService do
   require Logger
 
   def enabled? do
-    System.get_env("REDIS_ENABLED", "false") == "true"
+    enabled = System.get_env("REDIS_ENABLED", "false") == "true"
+    Logger.info("🔴 CACHE DEBUG: Redis enabled check: #{enabled}")
+    enabled
   end
 
   def get(key) do
+    Logger.info("🔴 CACHE DEBUG: GET request for key: #{key}")
     if enabled?() do
       try do
         case Redix.command(:redix, ["GET", key]) do
-          {:ok, nil} -> nil
+          {:ok, nil} -> 
+            Logger.info("🟡 CACHE DEBUG: Key not found: #{key}")
+            nil
           {:ok, value} -> 
+            Logger.info("🟢 CACHE DEBUG: Cache HIT for key: #{key}")
             value
             |> Jason.decode!()
             |> atomize_keys()
           {:error, reason} -> 
-            Logger.error("Redis GET error: #{inspect(reason)}")
+            Logger.error("🔴 CACHE DEBUG: Redis GET error: #{inspect(reason)}")
             nil
         end
       rescue
         e -> 
-          Logger.error("Redis GET exception: #{inspect(e)}")
+          Logger.error("🔴 CACHE DEBUG: Redis GET exception: #{inspect(e)}")
           nil
       end
     else
+      Logger.info("🟡 CACHE DEBUG: Redis disabled, returning nil for key: #{key}")
       nil
     end
   end
@@ -40,23 +47,25 @@ defmodule PhoenixBookReview.Services.CacheService do
   defp atomize_keys(value), do: value
 
   def set(key, value, ttl \\ 3600) do
+    Logger.info("🔴 CACHE DEBUG: SET request for key: #{key}, TTL: #{ttl}")
     if enabled?() do
       try do
         json_value = Jason.encode!(value)
         case Redix.command(:redix, ["SETEX", key, ttl, json_value]) do
           {:ok, _} -> 
-            Logger.info("Redis SET success: #{key}")
+            Logger.info("🟢 CACHE DEBUG: SET success: #{key}")
             :ok
           {:error, reason} -> 
-            Logger.error("Redis SET error: #{inspect(reason)}")
+            Logger.error("🔴 CACHE DEBUG: SET error: #{inspect(reason)}")
             :error
         end
       rescue
         e -> 
-          Logger.error("Redis SET exception: #{inspect(e)}")
+          Logger.error("🔴 CACHE DEBUG: SET exception: #{inspect(e)}")
           :error
       end
     else
+      Logger.info("🟡 CACHE DEBUG: Redis disabled, skipping SET for key: #{key}")
       :ok
     end
   end
