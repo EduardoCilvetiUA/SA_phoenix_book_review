@@ -29,10 +29,10 @@ defmodule PhoenixBookReview.Application do
   defp redis_children do
     if System.get_env("REDIS_ENABLED", "false") == "true" do
       redis_url = System.get_env("REDIS_URL")
-      Logger.info("🔴 REDIS DEBUG: Enabling Redis with URL: #{redis_url}")
+      Logger.info("Enabling Redis connection with URL: #{redis_url}")
       [{Redix, {redis_url, [name: :redix]}}]
     else
-      Logger.info("🔴 REDIS DEBUG: Redis is DISABLED (REDIS_ENABLED=false)")
+      Logger.info("Redis is disabled (REDIS_ENABLED=false)")
       []
     end
   end
@@ -41,27 +41,27 @@ defmodule PhoenixBookReview.Application do
     if System.get_env("REDIS_ENABLED", "false") == "true" do
       Task.start(fn ->
         :timer.sleep(2000) # Wait for Redis to be ready
-        Logger.info("🔴 REDIS DEBUG: Testing Redis connection...")
+        Logger.info("Testing Redis connection...")
         
         case Redix.command(:redix, ["PING"]) do
           {:ok, "PONG"} -> 
-            Logger.info("🟢 REDIS DEBUG: Connection SUCCESS - Redis is working!")
+            Logger.info("Redis connection successful")
             # Test set/get operations
-            test_key = "debug_test_#{:os.system_time(:millisecond)}"
+            test_key = "connection_test_#{:os.system_time(:millisecond)}"
             test_value = %{test: "data", timestamp: :os.system_time(:second)}
             
             case PhoenixBookReview.Services.CacheService.set(test_key, test_value, 60) do
               :ok -> 
-                Logger.info("🟢 REDIS DEBUG: SET operation SUCCESS")
+                Logger.info("Redis SET operation successful")
                 case PhoenixBookReview.Services.CacheService.get(test_key) do
-                  nil -> Logger.error("🔴 REDIS DEBUG: GET operation FAILED - returned nil")
-                  result -> Logger.info("🟢 REDIS DEBUG: GET operation SUCCESS - got: #{inspect(result)}")
+                  nil -> Logger.error("Redis GET operation failed - returned nil")
+                  result -> Logger.info("Redis GET operation successful - received: #{inspect(result)}")
                 end
-              :error -> Logger.error("🔴 REDIS DEBUG: SET operation FAILED")
+              :error -> Logger.error("Redis SET operation failed")
             end
             
           {:error, reason} -> 
-            Logger.error("🔴 REDIS DEBUG: Connection FAILED - #{inspect(reason)}")
+            Logger.error("Redis connection failed: #{inspect(reason)}")
         end
       end)
     end
