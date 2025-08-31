@@ -115,6 +115,23 @@ def main():
         for x in range(0, int(max_time) + 1, interval):
             ax.axvline(x=x, color='gray', linestyle='--', linewidth=0.5, alpha=0.7)
     
+    def add_thread_group_markers(ax, max_time):
+        """Add vertical lines for JMeter thread group start times"""
+        thread_groups = [
+            (0, "1 Request"),
+            (10, "10 Request"), 
+            (20, "100 Request"),
+            (50, "1000 Request"),
+            (110, "5000 Request")
+        ]
+        
+        for start_time, label in thread_groups:
+            if start_time <= max_time:
+                ax.axvline(x=start_time, color='red', linestyle='-', linewidth=2, alpha=0.8)
+                ax.text(start_time + 1, ax.get_ylim()[1] * 0.9, label, 
+                       rotation=90, verticalalignment='top', fontsize=10, 
+                       color='red', fontweight='bold')
+    
     # Create output directory
     output_dir = f"arch_{arch}/{name_file}"
     
@@ -137,6 +154,7 @@ def main():
     if time_deltas:
         plt.xticks(range(0, int(time_deltas[-1]) + 1, interval))
         add_vertical_lines(ax, interval_line, time_deltas[-1])
+        add_thread_group_markers(ax, time_deltas[-1])
     
     plt.tight_layout()
     cpu_output = f"{output_dir}/{name_file}_cpu_usage.png"
@@ -163,6 +181,7 @@ def main():
     if time_deltas:
         plt.xticks(range(0, int(time_deltas[-1]) + 1, interval))
         add_vertical_lines(ax, interval_line, time_deltas[-1])
+        add_thread_group_markers(ax, time_deltas[-1])
     
     plt.tight_layout()
     mem_output = f"{output_dir}/{name_file}_memory_usage.png"
@@ -189,6 +208,7 @@ def main():
     if time_deltas:
         plt.xticks(range(0, int(time_deltas[-1]) + 1, interval))
         add_vertical_lines(ax, interval_line, time_deltas[-1])
+        add_thread_group_markers(ax, time_deltas[-1])
     
     plt.tight_layout()
     threads_output = f"{output_dir}/{name_file}_threads_count.png"
