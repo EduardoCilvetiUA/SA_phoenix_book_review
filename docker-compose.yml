@@ -28,6 +28,10 @@ services:
       - SECRET_KEY_BASE=${SECRET_KEY_BASE}
       - PHX_PORT=${PHX_PORT}
       - MIX_ENV=${MIX_ENV:-dev}
+      - REDIS_ENABLED=false
+      - ELASTICSEARCH_ENABLED=false
+      - STATIC_ASSETS_SERVED_BY_PROXY=false
+      - UPLOAD_PATH=${UPLOAD_PATH}
     volumes:
       - .:/app
     command: >

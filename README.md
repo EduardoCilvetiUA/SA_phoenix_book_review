@@ -222,3 +222,30 @@ The system is production-ready with:
 - **Maintainability**: Clean separation of concerns and modular design
 - **Security**: Reverse proxy isolation and secure asset serving
 - **Flexibility**: Environment-controlled feature activation
+
+
+.env (bd and web only):
+
+```bash
+DATABASE_PASSWORD=password
+DATABASE_HOST=db
+DATABASE_URL=postgresql://postgres:db@localhost/phoenix_book_review_dev
+
+# Phoenix Configuration
+SECRET_KEY_BASE=xDqTau4dWLdp65pr3CC1vTDUh+YRZfYSCe43Uk6W6c0XBOC5MF2qpM70fQMGEF7L
+PHX_HOST=localhost
+PHX_PORT=4000
+MIX_ENV=dev
+
+# Redis Configuration
+REDIS_ENABLED=false
+REDIS_URL=redis://redis:6379/0
+
+# Elasticsearch Configuration
+ELASTICSEARCH_ENABLED=false
+ELASTICSEARCH_URL=http://elasticsearch:9200
+
+# Static Asset Configuration (no proxy)
+STATIC_ASSETS_SERVED_BY_PROXY=false
+UPLOAD_PATH=priv/static/uploads
+```

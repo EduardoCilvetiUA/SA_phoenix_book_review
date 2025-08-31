@@ -14,7 +14,13 @@ if Mix.env() in [:dev, :test] do
     |> Enum.reject(&String.starts_with?(&1, "#"))
     |> Enum.each(fn line ->
       case String.split(line, "=", parts: 2) do
-        [key, value] -> System.put_env(String.trim(key), String.trim(value))
+        [key, value] -> 
+          key = String.trim(key)
+          value = String.trim(value)
+          # Only set if not already defined in system environment
+          unless System.get_env(key) do
+            System.put_env(key, value)
+          end
         _ -> :ok
       end
     end)

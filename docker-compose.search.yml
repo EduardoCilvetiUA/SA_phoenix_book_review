@@ -49,6 +49,8 @@ services:
       - REDIS_ENABLED=false
       - ELASTICSEARCH_ENABLED=true
       - ELASTICSEARCH_URL=http://elasticsearch:9200
+      - STATIC_ASSETS_SERVED_BY_PROXY=false
+      - UPLOAD_PATH=${UPLOAD_PATH}
     volumes:
       - .:/app
     command: >
