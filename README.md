@@ -73,42 +73,58 @@ PHX_PORT=4000
 MIX_ENV=dev
 ```
 
-### Optional Service Controls
+### Service Configuration
+Each Docker Compose configuration automatically enables its corresponding services, overriding `.env` settings:
+
 ```bash
-REDIS_ENABLED=true|false
+# Base configuration (applies to all setups)
 REDIS_URL=redis://redis:6379/0
-ELASTICSEARCH_ENABLED=true|false  
 ELASTICSEARCH_URL=http://elasticsearch:9200
 STATIC_ASSETS_SERVED_BY_PROXY=true|false
 UPLOAD_PATH=/app/priv/static/uploads
+
+# Service enablement (automatically set by Docker configuration)
+REDIS_ENABLED=true|false          # Auto-enabled in cache/proxy-full configs
+ELASTICSEARCH_ENABLED=true|false  # Auto-enabled in search/proxy-full configs
 ```
 
 ## Docker Deployment Options
+
+Each configuration automatically enables the required services without needing to modify `.env` variables:
 
 ### Basic Application + Database
 ```bash
 docker-compose up -d
 ```
+*Services: Phoenix app + PostgreSQL only*
 
-### Application + Database + Cache
+### Application + Database + Cache  
 ```bash
 docker-compose -f docker-compose.cache.yml up -d
 ```
+*Services: Phoenix app + PostgreSQL + Redis*  
+*Auto-enables: `REDIS_ENABLED=true`*
 
 ### Application + Database + Search
 ```bash
 docker-compose -f docker-compose.search.yml up -d
 ```
+*Services: Phoenix app + PostgreSQL + Elasticsearch*  
+*Auto-enables: `ELASTICSEARCH_ENABLED=true`*
 
 ### Application + Database + Reverse Proxy
 ```bash
 docker-compose -f docker-compose.proxy.yml up -d
 ```
+*Services: Phoenix app + PostgreSQL + Caddy*  
+*Auto-enables: `STATIC_ASSETS_SERVED_BY_PROXY=true`*
 
 ### Complete Stack (All Components)
 ```bash
 docker-compose -f docker-compose.proxy-full.yml up -d
 ```
+*Services: Phoenix app + PostgreSQL + Redis + Elasticsearch + Caddy*  
+*Auto-enables: All service flags (`REDIS_ENABLED`, `ELASTICSEARCH_ENABLED`, `STATIC_ASSETS_SERVED_BY_PROXY`)*
 
 ## Service Access Points
 
@@ -199,9 +215,9 @@ All services include health check configurations:
 ## Development Setup
 
 1. Clone repository and navigate to project directory
-2. Copy `.env.example` to `.env` and configure variables
-3. Choose appropriate Docker Compose configuration
-4. Run `docker-compose -f [chosen-config].yml up -d`
+2. Configure required environment variables in `.env` (database password, secret key)
+3. Choose appropriate Docker Compose configuration based on needed services
+4. Run `docker-compose -f [chosen-config].yml up -d` (services auto-configure themselves)
 5. Access application at configured endpoint
 
 ## Production Deployment
