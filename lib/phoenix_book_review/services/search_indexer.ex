@@ -12,23 +12,19 @@ defmodule PhoenixBookReview.Services.SearchIndexer do
 
   def reindex_all_books do
     if SearchService.enabled?() do
-      Logger.info("Indexing books in Elasticsearch...")
       
       PhoenixBookReview.Catalog.list_books()
       |> Enum.each(&SearchService.index_book/1)
       
-      Logger.info("Books indexing completed")
     end
   end
 
   def reindex_all_reviews do
     if SearchService.enabled?() do
-      Logger.info("Indexing reviews in Elasticsearch...")
       
       PhoenixBookReview.Catalog.list_reviews()
       |> Enum.each(&SearchService.index_review/1)
       
-      Logger.info("Reviews indexing completed")
     end
   end
 
@@ -51,12 +47,12 @@ defmodule PhoenixBookReview.Services.SearchIndexer do
       
       case Req.put!(url, json: mapping) do
         %{status: status} when status in 200..299 -> 
-          Logger.info("Books index created successfully")
+          :ok
         response -> 
-          Logger.warn("Books index creation: #{inspect(response)}")
+          :error
       end
     rescue
-      e -> Logger.error("Books index creation exception: #{inspect(e)}")
+      e -> nil
     end
   end
 
@@ -78,12 +74,12 @@ defmodule PhoenixBookReview.Services.SearchIndexer do
       
       case Req.put!(url, json: mapping) do
         %{status: status} when status in 200..299 -> 
-          Logger.info("Reviews index created successfully")
+          :ok
         response -> 
-          Logger.warn("Reviews index creation: #{inspect(response)}")
+          :error
       end
     rescue
-      e -> Logger.error("Reviews index creation exception: #{inspect(e)}")
+      e -> nil
     end
   end
 

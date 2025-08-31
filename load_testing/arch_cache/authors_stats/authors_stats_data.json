@@ -1,0 +1,1894 @@
+[
+    {
+        "2025-08-30 19:40:20": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "2.55%",
+                "MemUsage": "223.9MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "54.56MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.36%",
+                "MemUsage": "3.223MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:40:24": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "23.29%",
+                "MemUsage": "223.7MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.88%",
+                "MemUsage": "55.14MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.37%",
+                "MemUsage": "3.254MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:40:28": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "2.78%",
+                "MemUsage": "223.4MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.03%",
+                "MemUsage": "55.14MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.52%",
+                "MemUsage": "3.504MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:40:31": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "2.89%",
+                "MemUsage": "223.4MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.02%",
+                "MemUsage": "55.14MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.53%",
+                "MemUsage": "3.254MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:40:35": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "37.55%",
+                "MemUsage": "224.1MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.09%",
+                "MemUsage": "55.14MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.273MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:40:38": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "40.95%",
+                "MemUsage": "224.1MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.06%",
+                "MemUsage": "55.14MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.27%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:40:42": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "2.68%",
+                "MemUsage": "223.3MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.06%",
+                "MemUsage": "55.14MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.27%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:40:46": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "21.30%",
+                "MemUsage": "223.8MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.33%",
+                "MemUsage": "55.16MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.31%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:40:49": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "30.56%",
+                "MemUsage": "223.6MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.14%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.31%",
+                "MemUsage": "3.305MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:40:53": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "44.12%",
+                "MemUsage": "224MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.08%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.26%",
+                "MemUsage": "3.316MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:40:57": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "38.38%",
+                "MemUsage": "224.1MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.10%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.28%",
+                "MemUsage": "3.316MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:01": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "34.70%",
+                "MemUsage": "223.8MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.26%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.316MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:04": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "3.24%",
+                "MemUsage": "223.7MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.02%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.29%",
+                "MemUsage": "3.316MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:08": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "2.11%",
+                "MemUsage": "223.7MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.01%",
+                "MemUsage": "55.4MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.48%",
+                "MemUsage": "3.316MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:11": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "3.10%",
+                "MemUsage": "224.2MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.06%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.43%",
+                "MemUsage": "3.316MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:15": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "39.38%",
+                "MemUsage": "224.7MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "1.32%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.24%",
+                "MemUsage": "3.316MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:18": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "20.88%",
+                "MemUsage": "224.2MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.316MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:22": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "15.28%",
+                "MemUsage": "225.3MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.316MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:26": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "19.26%",
+                "MemUsage": "225.6MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.04%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.24%",
+                "MemUsage": "3.316MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:29": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "40.25%",
+                "MemUsage": "232.7MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.04%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.24%",
+                "MemUsage": "3.316MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:33": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "57.22%",
+                "MemUsage": "239.4MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.03%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.24%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:37": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "24.60%",
+                "MemUsage": "242.3MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.02%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.24%",
+                "MemUsage": "3.301MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:41": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "54.71%",
+                "MemUsage": "245.1MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.43%",
+                "MemUsage": "3.301MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:44": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "21.04%",
+                "MemUsage": "247.4MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.24%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:48": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "65.34%",
+                "MemUsage": "241.5MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.93%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:51": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "21.60%",
+                "MemUsage": "241.6MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.34%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:55": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "39.54%",
+                "MemUsage": "234.8MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.03%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.78%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:41:58": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "21.26%",
+                "MemUsage": "237.7MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.03%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.28%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:02": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "54.95%",
+                "MemUsage": "239.3MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.84%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:06": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "15.85%",
+                "MemUsage": "242.2MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.24%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:09": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "25.69%",
+                "MemUsage": "242.9MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.06%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.79%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:13": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "18.86%",
+                "MemUsage": "244.5MiB / 7.757GiB",
+                "PIDs": "58"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.24%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:17": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "71.26%",
+                "MemUsage": "245.3MiB / 7.757GiB",
+                "PIDs": "58"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "1.47%",
+                "MemUsage": "55.41MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "1.17%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:20": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "20.98%",
+                "MemUsage": "240.4MiB / 7.757GiB",
+                "PIDs": "53"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "1.41%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:24": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "43.96%",
+                "MemUsage": "241.2MiB / 7.757GiB",
+                "PIDs": "53"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.07%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.41%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:28": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "20.53%",
+                "MemUsage": "241.6MiB / 7.757GiB",
+                "PIDs": "53"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.04%",
+                "MemUsage": "55.4MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:31": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "39.49%",
+                "MemUsage": "242.3MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.06%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "2.19%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:35": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "15.35%",
+                "MemUsage": "242.2MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.01%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:38": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "29.79%",
+                "MemUsage": "243.1MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.05%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.83%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:42": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "18.75%",
+                "MemUsage": "244.3MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:46": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "47.47%",
+                "MemUsage": "251.4MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "1.37%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.26%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:49": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "11.85%",
+                "MemUsage": "251.2MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.03%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:53": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "60.23%",
+                "MemUsage": "251MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "1.43%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.27%",
+                "MemUsage": "3.547MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:42:57": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "17.29%",
+                "MemUsage": "249.1MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.29%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:01": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "48.48%",
+                "MemUsage": "250.1MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.02%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.26%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:04": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "22.85%",
+                "MemUsage": "250.1MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.01%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.29%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:08": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "36.31%",
+                "MemUsage": "250.3MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.06%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:11": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "24.55%",
+                "MemUsage": "250.5MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:15": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "38.64%",
+                "MemUsage": "251.1MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "1.53%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:18": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "20.19%",
+                "MemUsage": "250.6MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.24%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:22": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "49.75%",
+                "MemUsage": "252MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.26%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:26": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "19.72%",
+                "MemUsage": "251.4MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:29": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "33.60%",
+                "MemUsage": "250.8MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.08%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.84%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:33": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "19.63%",
+                "MemUsage": "250.9MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:37": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "47.21%",
+                "MemUsage": "251.3MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "1.31%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "2.16%",
+                "MemUsage": "3.301MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:41": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "14.09%",
+                "MemUsage": "251.9MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.03%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.24%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:44": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "42.42%",
+                "MemUsage": "252.7MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "1.31%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:48": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "24.74%",
+                "MemUsage": "251.9MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.02%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "1.51%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:51": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "47.39%",
+                "MemUsage": "252MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.02%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.27%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:55": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "29.42%",
+                "MemUsage": "252MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.03%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.24%",
+                "MemUsage": "3.547MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:43:59": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "37.42%",
+                "MemUsage": "249MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.02%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.26%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:02": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "27.96%",
+                "MemUsage": "248MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.30%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:06": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "38.90%",
+                "MemUsage": "249.8MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "1.35%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.24%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:09": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "21.33%",
+                "MemUsage": "249.9MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "1.47%",
+                "MemUsage": "3.305MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:13": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "39.36%",
+                "MemUsage": "251.6MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.05%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.24%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:17": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "65.64%",
+                "MemUsage": "251MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.02%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.24%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:21": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "15.16%",
+                "MemUsage": "251.6MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.03%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "1.46%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:24": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "65.00%",
+                "MemUsage": "251.7MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.32%",
+                "MemUsage": "55.16MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.85%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:28": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "20.61%",
+                "MemUsage": "252.1MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.28%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:31": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "55.97%",
+                "MemUsage": "252.1MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "1.37%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.26%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:35": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "25.43%",
+                "MemUsage": "252.4MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.00%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.281MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:38": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "49.86%",
+                "MemUsage": "252.9MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.02%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:42": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "48.55%",
+                "MemUsage": "253.4MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "1.55%",
+                "MemUsage": "55.16MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.84%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:46": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "25.15%",
+                "MemUsage": "254.2MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.05%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:49": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "49.46%",
+                "MemUsage": "255MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.05%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.63%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:53": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "24.01%",
+                "MemUsage": "256.2MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "1.67%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "1.54%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:44:57": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "49.46%",
+                "MemUsage": "258.7MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "1.34%",
+                "MemUsage": "55.16MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.53%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:45:01": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "19.42%",
+                "MemUsage": "255MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.02%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.293MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:45:04": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "32.72%",
+                "MemUsage": "255.5MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "3.15%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "1.51%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:45:08": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "28.41%",
+                "MemUsage": "256.1MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.03%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:45:11": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "26.23%",
+                "MemUsage": "255.5MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.05%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.25%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:45:15": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "25.12%",
+                "MemUsage": "255.8MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "1.65%",
+                "MemUsage": "55.16MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "1.56%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:45:19": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "25.81%",
+                "MemUsage": "257.6MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.05%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.26%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:45:22": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "65.09%",
+                "MemUsage": "256.3MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.02%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "1.00%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:45:26": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "24.28%",
+                "MemUsage": "255.5MiB / 7.757GiB",
+                "PIDs": "52"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "1.72%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "1.54%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    },
+    {
+        "2025-08-30 19:45:29": [
+            {
+                "Name": "phoenix_book_review-web-1",
+                "CPUPerc": "60.83%",
+                "MemUsage": "251.3MiB / 7.757GiB",
+                "PIDs": "57"
+            },
+            {
+                "Name": "phoenix_book_review-db-1",
+                "CPUPerc": "0.03%",
+                "MemUsage": "55.15MiB / 7.757GiB",
+                "PIDs": "16"
+            },
+            {
+                "Name": "phoenix_book_review-redis-1",
+                "CPUPerc": "0.28%",
+                "MemUsage": "3.297MiB / 7.757GiB",
+                "PIDs": "6"
+            }
+        ]
+    }
+]

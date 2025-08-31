@@ -12,7 +12,6 @@ defmodule PhoenixBookReview.Services.SearchService do
         elasticsearch_search(query, page, per_page)
       rescue
         e -> 
-          Logger.error("Elasticsearch search exception: #{inspect(e)}")
           nil
       end
     else
@@ -38,12 +37,10 @@ defmodule PhoenixBookReview.Services.SearchService do
           %{status: status} when status in 200..299 -> 
             :ok
           response -> 
-            Logger.error("Elasticsearch index error: #{inspect(response)}")
             :error
         end
       rescue
         e -> 
-          Logger.error("Elasticsearch index exception: #{inspect(e)}")
           :error
       end
     else
@@ -68,12 +65,10 @@ defmodule PhoenixBookReview.Services.SearchService do
           %{status: status} when status in 200..299 -> 
             :ok
           response -> 
-            Logger.error("Elasticsearch review index error: #{inspect(response)}")
             :error
         end
       rescue
         e -> 
-          Logger.error("Elasticsearch review index exception: #{inspect(e)}")
           :error
       end
     else
@@ -144,7 +139,6 @@ defmodule PhoenixBookReview.Services.SearchService do
           total_pages: div(total_value + per_page - 1, per_page)
         }
       response ->
-        Logger.error("Elasticsearch search error: #{inspect(response)}")
         nil
     end
   end
