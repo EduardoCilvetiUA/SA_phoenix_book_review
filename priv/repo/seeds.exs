@@ -115,10 +115,10 @@ IO.puts("Seeding 300 books...")
 books = Enum.map(1..300, fn i ->
   author = Enum.random(authors)
   pub_year = 1950 + :rand.uniform(74)
-  
+
   title = Enum.at(book_titles, rem(i - 1, length(book_titles)))
   unique_title = if i > length(book_titles), do: "#{title} Volume #{div(i - 1, length(book_titles)) + 1}", else: title
-  
+
   %Book{}
   |> Book.changeset(%{
     name: unique_title,
@@ -156,7 +156,7 @@ review_texts = [
 IO.puts("Seeding reviews (1-10 per book)...")
 Enum.each(books, fn book ->
   review_count = 1 + :rand.uniform(10)
-  
+
   Enum.each(1..review_count, fn _ ->
     %Review{}
     |> Review.changeset(%{
@@ -174,7 +174,7 @@ current_year = Date.utc_today().year
 Enum.each(books, fn book ->
   years_count = 5 + :rand.uniform(10)
   start_year = current_year - years_count
-  
+
   Enum.each(start_year..current_year, fn year ->
     %Sales{}
     |> Sales.changeset(%{
@@ -189,6 +189,6 @@ end)
 IO.puts("Seed data created successfully!")
 IO.puts("Created:")
 IO.puts("- 50 real authors with accurate birth years and countries")
-IO.puts("- 300 books with varied titles and publication dates")  
+IO.puts("- 300 books with varied titles and publication dates")
 IO.puts("- 1-10 reviews per book")
 IO.puts("- 5-15 years of sales data per book")

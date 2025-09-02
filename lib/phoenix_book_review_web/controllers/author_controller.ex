@@ -3,6 +3,7 @@ defmodule PhoenixBookReviewWeb.AuthorController do
 
   alias PhoenixBookReview.Catalog
   alias PhoenixBookReview.Catalog.Author
+  alias PhoenixBookReview.Services.FileUpload
 
   def index(conn, _params) do
     authors = Catalog.list_authors()
@@ -20,6 +21,8 @@ defmodule PhoenixBookReviewWeb.AuthorController do
   end
 
   def create(conn, %{"author" => author_params}) do
+    author_params = handle_image_upload(author_params, "profile_image_upload")
+    
     case Catalog.create_author(author_params) do
       {:ok, author} ->
         conn
@@ -39,6 +42,7 @@ defmodule PhoenixBookReviewWeb.AuthorController do
 
   def update(conn, %{"id" => id, "author" => author_params}) do
     author = Catalog.get_author!(id)
+    author_params = handle_image_upload(author_params, "profile_image_upload")
 
     case Catalog.update_author(author, author_params) do
       {:ok, author} ->
@@ -64,6 +68,17 @@ defmodule PhoenixBookReviewWeb.AuthorController do
         conn
         |> put_flash(:error, "Error deleting author.")
         |> redirect(to: ~p"/authors")
+    end
+  end
+
+  defp handle_image_upload(params, upload_key) do
+    case Map.get(params, upload_key) do
+      %Plug.Upload{} = upload ->
+        case FileUpload.handle_upload(upload, "author_profile") do
+          {:ok, path} -> Map.put(params, "profile_image", path)
+          {:error, _} -> params
+        end
+      _ -> params
     end
   end
 end
